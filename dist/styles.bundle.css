@@ -1,0 +1,43 @@
+.weather-view {
+  height: 50%;
+  max-width: 500px;
+  width: 50%; }
+
+.weather-component {
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+  .weather-component__wrapper {
+    width: 100%; }
+  .weather-component__body {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px; }
+  .weather-component__title {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly; }
+    .weather-component__title__units {
+      display: flex;
+      justify-content: space-evenly;
+      width: 50px; }
+  .weather-component__temperature--max {
+    font-size: 40px; }
+  .weather-component__footer {
+    display: flex;
+    justify-content: space-between; }
+  .weather-component__actions {
+    display: flex;
+    justify-content: center;
+    padding: 40px; }
+
+html, body {
+  height: 100%; }
+
+.views__wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center; }

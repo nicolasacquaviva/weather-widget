@@ -1,0 +1,32 @@
+<div class="weather-component">
+    <div class="weather-component__wrapper">
+        <div class="weather-component__header">
+            <div class="weather-component__title">
+                <h3>{{ weather.title }}</h3>
+            </div>
+        </div>
+        <div class="weather-component__body">
+            <icon-component icon-code="weather.data[weather.dateShowingIndex].weather[0].icon" icon-size="90px"></icon-component>
+            <p>
+                <span class="weather-component__temperature--max">
+                    {{ weather.data[weather.dateShowingIndex].main.temp_max | celsius }}
+                </span>
+                <br /> /
+                <span class="weather-component__temperature--min">
+                    {{ weather.data[weather.dateShowingIndex].main.temp_min | celsius }}
+                </span>
+            </p>
+        </div>
+        <div class="weather-component__footer">
+            <div class="weather-component__footer__item" ng-repeat="extendedWeather in weather.getExtendedWeather()">
+                <p>{{ extendedWeather.main.temp | celsius }}</p>
+                <icon-component icon-code="extendedWeather.weather[0].icon"></icon-component>
+            </div>
+        </div>
+        <div class="weather-component__actions">
+            <button ng-click="weather.getPreviousDate()">Previous</button>
+            <button ng-click="weather.getNextDate()">Next</button>
+        </div>
+    </div>
+</div>
+
