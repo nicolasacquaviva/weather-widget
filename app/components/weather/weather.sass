@@ -1,7 +1,11 @@
 .weather-component
   align-items: center
+  background-color: #fefefe
+  border-radius: 2px
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
   display: flex
   flex-direction: column
+  padding: 25px
 
   &__wrapper
     width: 100%
@@ -18,6 +22,10 @@
     flex-direction: row-reverse
     justify-content: space-evenly
 
+    h3
+      font-size: 35px
+      margin: 15px
+
     &__units
       display: flex
       justify-content: space-evenly
@@ -30,8 +38,20 @@
   &__footer
     display: flex
     justify-content: space-between
+    padding: 5px 35px
 
   &__actions
     display: flex
     justify-content: center
-    padding: 40px
+    margin-top: 40px
+
+    button
+      background-color: #2ecc71
+      border-radius: 2px
+      border-width: 0
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6)
+      color: #ecf0f1
+      font-size: 15px
+      margin: 0 10px
+      outline: none
+      padding: 3px 10px

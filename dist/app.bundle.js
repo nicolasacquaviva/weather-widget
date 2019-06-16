@@ -16893,7 +16893,7 @@ angular.module('app', [
   __webpack_require__(139).id,
   __webpack_require__(140).id,
   __webpack_require__(141).id,
-  __webpack_require__(145).id
+  __webpack_require__(142).id
 ])
   .config(function () {})
   .run(function () {})
@@ -55070,7 +55070,6 @@ function WeatherViewController (WeatherService) {
   WeatherService.getWeather()
     .then(function (weather) {
       this.weatherData = weather.list
-      console.log(this.weatherData)
     }.bind(this))
     .catch(function (err) {
       console.error(err)
@@ -55114,15 +55113,7 @@ module.exports.id = 'app.weatherService'
 
 
 /***/ }),
-/* 142 */,
-/* 143 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 144 */,
-/* 145 */
+/* 142 */
 /***/ (function(module, exports) {
 
 function toCelsius () {
@@ -55137,6 +55128,12 @@ module.exports = angular
 
 module.exports.id = 'app.celsiusFilter'
 
+
+/***/ }),
+/* 143 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
