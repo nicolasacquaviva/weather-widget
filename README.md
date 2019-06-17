@@ -4,6 +4,6 @@
 
 1. `npm i`
 
-2. `npm run dev`
+2. `npm run dev`, and the app will start on the port :3000
 
-3. The app will start on the port :3000
+3. `npm run test`, to run unit tests
